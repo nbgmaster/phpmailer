@@ -118,7 +118,7 @@ class SMTP {
   public function Connect($host, $port = 0, $tval = 30) {
     // set the error val to null so there is no confusion
     $this->error = null;
-
+	
     // make sure we are __not__ connected
     if($this->connected()) {
       // already connected, generate error
